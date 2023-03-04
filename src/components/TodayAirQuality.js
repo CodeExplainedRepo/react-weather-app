@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TodayAirQuality() {
-  return <div>TodayAirQuality</div>;
+  return <div className="today-air-quality">TodayAirQuality</div>;
 }
 
 export default TodayAirQuality;

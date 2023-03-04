@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TodayWeather() {
-  return <div>TodayWeather</div>;
+  return <div className="today-weather">TodayWeather</div>;
 }
 
 export default TodayWeather;

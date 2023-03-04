@@ -1,38 +1,26 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-areas:
+    'p p p p p p s s s s s s'
+    'tw tw tw tw tw tw taq taq taq taq taq taq'
+    'tt tt tt tt tt tt tt tt tow tow tow tow';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile {
+  grid-area: p;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  grid-area: s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.today-weather {
+  grid-area: tw;
 }
-
-.App-link {
-  color: #61dafb;
+.today-air-quality {
+  grid-area: taq;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.today-temperature {
+  grid-area: tt;
+}
+.tomorrow-weather {
+  grid-area: tow;
 }
