@@ -1,0 +1,14 @@
+@use '../variables/variables' as *;
+
+.Main {
+  margin: 0 7rem;
+  padding: 20px 0;
+  height: $main-height;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 821px) {
+    margin: 0 2rem;
+  }
+}

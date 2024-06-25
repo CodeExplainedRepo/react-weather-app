@@ -1,0 +1,17 @@
+@use '../variables/colors' as *;
+
+.App-dark {
+  --main-bg-color: #{$main-bg-color-dark};
+  --header-bg-color: #{$header-bg-color-dark};
+  --border-color: #{$border-color-dark};
+  --primary-text-color: #{$primary-text-color-dark};
+  --secondary-text-color: #{$secondary-text-color-dark};
+}
+
+.App-light {
+  --main-bg-color: #{$main-bg-color-light};
+  --header-bg-color: #{$header-bg-color-light};
+  --border-color: #{$border-color-light};
+  --primary-text-color: #{$primary-text-color-light};
+  --secondary-text-color: #{$secondary-text-color-light};
+}

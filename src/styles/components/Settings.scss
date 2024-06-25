@@ -1,0 +1,83 @@
+@use '../variables/variables' as *;
+
+.Settings {
+  display: flex;
+  font-size: 1.25rem;
+
+  .theme-toggler {
+    $size: 25px;
+    .theme-buttons {
+      cursor: pointer;
+
+      display: flex;
+      position: relative;
+      height: $size;
+      width: $size;
+      overflow: hidden;
+
+      .light-theme-btn,
+      .dark-theme-btn {
+        position: absolute;
+        top: $size;
+        transition: top 0.5s ease-in-out;
+        &.active {
+          top: 0;
+        }
+      }
+    }
+  }
+  .settings-btn {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .settings-menu {
+    position: absolute;
+    z-index: 2;
+    top: calc($header-height + 0.25rem);
+    right: 2rem;
+
+    border-radius: 0.5rem;
+    background-color: var(--header-bg-color);
+    width: 250px;
+
+    padding: 0.5rem;
+    font-size: 1rem;
+
+    @include no-text-select;
+
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    &.open {
+      transform: scale(1);
+      visibility: visible;
+    }
+
+    .measurement-systems {
+      padding: 0.5rem;
+
+      .systems {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        .system {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 4rem;
+          height: 2rem;
+          margin: 0.25rem 0.25rem 0.25rem 0;
+          border: 1px solid var(--border-color);
+          border-radius: 0.5rem;
+
+          cursor: pointer;
+
+          &.active {
+            background-color: var(--primary-text-color);
+            color: var(--main-bg-color);
+          }
+        }
+      }
+    }
+  }
+}
