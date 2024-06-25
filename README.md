@@ -12,6 +12,7 @@ Check out the full tutorial on YouTube: [ReactJS Weather App Tutorial](https://w
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Dependencies](#dependencies)
 - [API Reference](#api-reference)
 - [Contributing](#contributing)
 - [License](#license)
@@ -66,6 +67,13 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```
 
 2. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Dependencies
+
+This project uses the following dependencies:
+
+- **axios**: A promise-based HTTP client for making requests to the Meteosource Weather API. It simplifies the process of handling HTTP requests and responses.
+- **bootstrap-icons**: A library of free, high-quality icons designed for Bootstrap, but usable in any project. These icons enhance the visual appeal and user experience of the app.
 
 ## API Reference
 
