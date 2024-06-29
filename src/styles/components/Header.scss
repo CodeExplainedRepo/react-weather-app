@@ -1,0 +1,19 @@
+@use '../variables/variables' as *;
+
+.Header {
+  background-color: var(--header-bg-color);
+  height: $header-height;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+
+  .place {
+    font-size: 1.2rem;
+    i {
+      margin-right: 0.25rem;
+    }
+  }
+}

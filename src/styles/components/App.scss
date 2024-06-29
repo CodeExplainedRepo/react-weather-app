@@ -1,0 +1,10 @@
+@use '../base/reset';
+@use '../themes/themes';
+
+.App-dark,
+.App-light {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+
+  overflow: hidden;
+}

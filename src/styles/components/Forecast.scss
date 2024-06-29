@@ -1,0 +1,57 @@
+@use '../variables/variables' as *;
+
+.Forecast {
+  margin-top: 2rem;
+  @include no-text-select;
+
+  .widget-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+
+    .widget {
+      position: relative;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0.75rem;
+      margin-right: 0.75rem;
+
+      min-width: 115px;
+
+      border: 1px solid var(--secondary-text-color);
+      border-radius: 1rem;
+
+      .day {
+        position: absolute;
+        top: -1.5rem;
+      }
+      .icon-temp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.75rem 0;
+        img {
+          width: 40px;
+          margin-right: 0.25rem;
+        }
+      }
+      .wind {
+        margin-top: 0.25rem;
+        display: flex;
+        .speed {
+          margin-right: 0.25rem;
+        }
+        .wind-dir {
+          font-size: 0.8rem;
+          margin-left: 0.25rem;
+        }
+      }
+    }
+  }
+}

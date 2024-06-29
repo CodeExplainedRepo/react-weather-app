@@ -1,0 +1,71 @@
+$height: 250px;
+
+.CurrentWeather {
+  display: flex;
+
+  @media screen and (max-width: 745px) {
+    flex-direction: column;
+  }
+
+  .temperature,
+  .other-infos {
+    padding: 1rem;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 1rem;
+  }
+
+  .temperature {
+    width: 250px;
+    height: auto;
+
+    .value {
+      .real {
+        font-size: 3rem;
+      }
+      .feels-like {
+        font-size: 1.1rem;
+      }
+    }
+    .summary {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+  .other-infos {
+    flex: 1;
+    height: auto;
+    margin-left: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 745px) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+
+    .widget {
+      width: 182px;
+
+      .widget-container {
+        padding: 0.5rem;
+        margin: 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info {
+          display: flex;
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+          .icon {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
