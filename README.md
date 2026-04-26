@@ -54,7 +54,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 3. Create a `.env` file in the root directory and add your Meteosource API key:
     ```env
-    REACT_APP_WEATHER_API_KEY=your_api_key_here
+    REACT_APP_API_KEY=your_api_key_here
     ```
 
 ### Usage
